@@ -1,1 +1,1 @@
-# coding=utf-8# @author   ：迷心兔# time      ：2019/11/6from django.urls import pathfrom . import viewsurlpatterns = [    path('', views.post_list, name = 'post_list'),]
+# coding=utf-8# @author   ：迷心兔# time      ：2019/11/6from django.urls import pathfrom . import viewsurlpatterns = [    path('', views.post_list, name = 'post_list'),    path('post/<int:pk>/', views.post_detail, name = 'post_detail'),]
