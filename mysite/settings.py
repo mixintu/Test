@@ -10,10 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import os
+import os, sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -73,8 +74,19 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME'  : os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE'  : 'django.db.backends.sqlite3',
+        # 'NAME'    : os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE'  : 'django.db.backends.mysql',
+        'HOST'    : 'localhost',
+        'PORT'    : '3316',
+        'USER'    : 'root',
+        'PASSWORD': '',
+        'NAME'    : 'blog',
+        # 避免映射数据库时出现警告
+        'OPTIONS' : {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset'     : 'utf8mb4',
+        },
     }
 }
 
