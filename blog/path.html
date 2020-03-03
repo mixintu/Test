@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Test Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<style>
+body {
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+* {
+    word-break: break-all;
+}
+table, td, th, .dataid {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background: #fff;
+}
+section {
+    background: rgba(0, 0, 0, 0.05);
+    margin: 2ex;
+    padding: 1ex;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 130%;
+}
+h2 {
+    font-size: 120%;
+}
+h3 {
+    font-size: 100%;
+}
+h4 {
+    font-size: 85%;
+}
+h1, h2, h3, h4, a[href] {
+    cursor: pointer;
+    color: #0074d9;
+    text-decoration: none;
+}
+h3 strong, a.failed {
+    color: #ff4136;
+}
+.failed {
+    color: #ff4136;
+}
+a.success {
+    color: #3d9970;
+}
+pre {
+    font-family: 'Consolas', 'Deja Vu Sans Mono',
+                 'Bitstream Vera Sans Mono', 'Monaco',
+                 'Courier New', monospace;
+}
+
+.test-details,
+.traceback {
+    display: none;
+}
+section:target .test-details {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+    <h1>Overview</h1>
+    <section>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Fail</th>
+                <th>Error</th>
+                <th>Skip</th>
+                <th>Success</th>
+                <th>Total</th>
+            </tr>
+                <tr>
+                    <td>blog.tests.test_field_login.FieldTypeTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_field_login.InputClassTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_field_new_and_edit.FieldTypeTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_field_new_and_edit.InputClassTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_detail.LoginSuccessNewTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_detail.NotLoginHomeTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_edit.AuthorPostEditTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_edit.LoginRequiredPostEditViewTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_edit.UnauthorizedPostEditViewTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_home.LoginSuccessHomeTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_home.NotLoginHomeTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_new.LoginRequiredNewViewTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>blog.tests.test_view_new.LoginSuccessNewTests</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>42</td>
+                <td>42</td>
+            </tr>
+        </table>
+    </section>
+    <h1>Failure details</h1>
+
+    <h1>All tests</h1>
+    <section>
+        <h2>blog.tests.test_field_login.FieldTypeTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_field_widget_type</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_field_login.InputClassTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_invalid_bound_field</a></li>
+                <li><a class="success">test_unbound_field_initial_state</a></li>
+                <li><a class="success">test_valid_bound_field</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_field_new_and_edit.FieldTypeTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_field_widget_type</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_field_new_and_edit.InputClassTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_invalid_bound_field</a></li>
+                <li><a class="success">test_unbound_field_initial_state</a></li>
+                <li><a class="success">test_valid_bound_field</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_detail.LoginSuccessNewTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_url_post_detail_resolves_view</a></li>
+                <li><a class="success">test_view_post_detail_contains_navigation_links</a></li>
+                <li><a class="success">test_view_post_detail_not_found_status_code</a></li>
+                <li><a class="success">test_view_post_detail_success_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_detail.NotLoginHomeTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_url_post_detail_resolves_view</a></li>
+                <li><a class="success">test_view_post_detail_contains_navigation_links</a></li>
+                <li><a class="success">test_view_post_detail_not_found_status_code</a></li>
+                <li><a class="success">test_view_post_detail_success_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_edit.AuthorPostEditTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_contains_form</a></li>
+                <li><a class="success">test_csrf</a></li>
+                <li><a class="success">test_form_inputs</a></li>
+                <li><a class="success">test_redirection</a></li>
+                <li><a class="success">test_url_edit_resolves_view</a></li>
+                <li><a class="success">test_view_post_edit_contains_navigation_links</a></li>
+                <li><a class="success">test_view_post_edit_success_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_edit.LoginRequiredPostEditViewTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_redirection</a></li>
+                <li><a class="success">test_view_post_edit_not_found_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_edit.UnauthorizedPostEditViewTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_view_post_edit_contains_link_to_topics_page</a></li>
+                <li><a class="success">test_view_post_edit_success_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_home.LoginSuccessHomeTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_url_home_resolves_view</a></li>
+                <li><a class="success">test_view_home_contains_navigation_links</a></li>
+                <li><a class="success">test_view_home_success_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_home.NotLoginHomeTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_url_home_resolves_view</a></li>
+                <li><a class="success">test_view_home_contains_navigation_links</a></li>
+                <li><a class="success">test_view_home_success_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_new.LoginRequiredNewViewTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_redirection</a></li>
+                <li><a class="success">test_view_post_new_not_found_status_code</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>blog.tests.test_view_new.LoginSuccessNewTests (0 failures, 0 errors)</h2>
+        <ul>
+                <li><a class="success">test_contains_form</a></li>
+                <li><a class="success">test_csrf</a></li>
+                <li><a class="success">test_form_inputs</a></li>
+                <li><a class="success">test_redirection</a></li>
+                <li><a class="success">test_url_post_new_resolves_view</a></li>
+                <li><a class="success">test_view_post_new_contains_navigation_links</a></li>
+                <li><a class="success">test_view_post_new_success_status_code</a></li>
+        </ul>
+    </section>
+</body>
+<script>
+    Array.prototype.forEach.call(document.querySelectorAll('h1, h2, h3, h4'), function(el) {
+        el.addEventListener('click', function() {
+            el.nextElementSibling.style.display = document.defaultView.getComputedStyle(el.nextElementSibling).display == 'none' ? 'block' : 'none';
+        })
+    })
+</script>
+</html>
